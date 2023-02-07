@@ -1,20 +1,40 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>{% block title %}Default Title{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'users/main.css' %}">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+
+    />
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-        </nav>
-    </header>
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-    <footer>
-        <p>Copyright © {{ year }}</p>
-    </footer>
+    <nav>
+        <div class="heading">
+            <h4>Navigation Bar</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="sidebar">
+    <h2>My sidebar</h2>
+    <ul>
+        <li><a href="">Annoucements</a></li>
+        <li><a href="">Events</a></li>
+        <li><a href="">Calendars</a></li>
+        <li><a href="">Contact Us</a></li>
+    </ul>
+
+    </div>
 </body>
 </html>
