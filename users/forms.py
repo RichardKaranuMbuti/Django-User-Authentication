@@ -8,6 +8,7 @@ class LoginForm(AuthenticationForm):
 class SignUpForm(UserCreationForm):
     email=forms.EmailField()
 
-    class meta:
+    class Meta:
         model=User
         fields=('username','email','password1','password2')
+

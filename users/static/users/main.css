@@ -13,7 +13,7 @@
   margin-top: 250px;
 }
 
-nav {
+.nav-local {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -21,7 +21,7 @@ nav {
   background-color: teal;
   font-family: "Montserrat", sans-serif;
 }
-.nav-links {
+.nav-links-local {
   display:flex;
   list-style: none;
   justify-content:space-around;
@@ -40,7 +40,7 @@ a{
   text-decoration: none;
 }
 
-.sidebar{
+.sidebar-local{
   position: fixed;
   right: 0;
   width: 200px;
@@ -60,3 +60,4 @@ a{
 .sidebar a:hover:not(.active){
   background-color: rgb(178, 32, 105);
 }
+
